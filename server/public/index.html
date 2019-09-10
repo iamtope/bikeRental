@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Admin Page</title>
+    </head>
+    <body>
+    <div>
+        <div>
+       <h4 class="first-heading">ADMIN DASHBOARD</h4>
+       <div>
+          <button type="submit" class="btn2" style="margin-top: 20px">ADD A NEW BIKE</button>
+      </div>
+        </div>
+        <div>
+            <form class=border style="center">
+      <div class="form-group">
+        <h6 class="text">NAME OF BIKE</h6>
+        <input type="email" class="form-control" id="exampleFormControlInput1">
+      </div>
+      <div class="form-group">
+        <h6 class="text"> PRICE</h6>
+        <input type="email" class="form-control" id="exampleFormControlInput1">
+      </div>
+      
+      <div>
+        <form action="/uploadfile" enctype="multipart/form-data" method="POST"> 
+            <input type="file" name="productImage" />
+            <input type="submit" value="Upload a file"/>
+         </form>
+      </div>
+      
+      <div class="form-group">
+        <h6 class="text">DESCRIPTION</h6>
+        <input type="email" class="message-control" id="exampleFormControlInput1">
+      </div>
+      <div>
+          <button type="submit" class="btn btn-primary " style="margin-top: 20px">SEND</button>
+      </div>
+    </form>
+        </div>
+    </div>
+</body>
+</html>
+    
+    <style scoped>
+     .first-heading{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+        
+    } 
+    h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-align: center
+    }
+    .form-control {
+    width: 500px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #9E9B9B;
+    box-sizing: border-box;
+        
+    }
+    .message-control{
+    width: 500px;
+    height: 200px;
+    background: #FFFFFF;
+    border: 1px solid #9E9B9B;
+    box-sizing: border-box;
+    } 
+    .text{
+    font-family: Roboto;
+    font-style: bold;
+    font-weight: bold;
+    font-size: 9px;
+    color: #000000;
+    }
+    .btn{
+    border: none;
+    color: white;
+    padding: 10px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    background: #52429B;
+    }
+    .btn2{
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 36px;
+    background: #52429B;
+    margin-left: 645px;
+    }
+    .border{
+        border: 1px solid #9E9B9B;
+        width: 500px;   
+        padding: 10px 50px;
+        margin: 70px 500px;
+    }
+    </style>
